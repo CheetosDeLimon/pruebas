@@ -1,0 +1,99 @@
+body {
+    background: linear-gradient(to right, #4089ef, #58b8ef);
+
+}
+
+
+/*le coloca los bordes a los titulos*/
+h3,
+h2 {
+    background-color: #0a5bfd7d;
+    border: 2px solid #004094;
+    padding: 8px;
+    /*Tamaño del titulo*/
+    border-radius: 10px;
+}
+
+
+/*esto le coloca la negrilla a las letras*/
+h3,
+h2,
+label,
+input,
+button,
+b {
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.485);
+}
+
+input {
+    font-weight: 700;
+    border-radius: 70px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: #98b1d97c;
+
+}
+
+b {
+    border-radius: 15px;
+    background-color: #3e7fe77c;
+    padding: 5px 5px;
+
+}
+
+
+button {
+    width: 70px;
+    border-radius: 40px;
+    background-color: #1d5ec87c;
+    padding: 5px 8px;
+    color: rgb(5, 197, 255);
+
+}
+
+
+a {
+    width: 70px;
+    border: #004094;
+    border-radius: 50px;
+    background-color: #1d5ec87c;
+    padding: 5px 8px;
+    color: rgb(5, 197, 255);
+    text-decoration: none;
+
+}
+
+
+h2,
+h3,
+form {
+    animation-name: cambioColor;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cambioColor {
+    0% {
+        color: rgb(2, 77, 215);
+    }
+
+    50% {
+        color: blue;
+    }
+
+    100% {
+        color: rgb(9, 96, 196);
+    }
+}
+
+
+button:hover {
+    border: 2px solid rgb(12, 65, 179);
+    color: rgb(12, 65, 179);
+}
+
+a:hover {
+    border: 2px solid rgb(12, 65, 179);
+    color: rgb(12, 65, 179);
+}

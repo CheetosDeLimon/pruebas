@@ -1,0 +1,141 @@
+html {
+    /* font-family: 'Playfair Display', serif; */
+
+    font-size: 16px;
+}
+
+body {
+    background: linear-gradient(to right, #4089ef, #58b8ef);
+
+}
+
+/*cambia el tamaño de la letra del h1*/
+h1 {
+    font-size: 40px;
+}
+
+/*le coloca los bordes a los titulos*/
+h1,
+h2 {
+    background-color: #0a5bfd7d;
+    border: 3px solid #004094;
+    padding: 5px;
+    border-radius: 16px;
+    width: 58rem;
+    padding: 17px;
+}
+
+
+/*esto le coloca la negrilla a las letras*/
+h1,
+h2,
+p,
+ul {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    width: 28rem;
+    max-width: 1000px;
+    min-width: 320px;
+    /* margin: auto; */
+    box-shadow: 1px 2px 2px black;
+    border-radius: 6px;
+    /* border: 4px solid rgb(5, 130, 207); */
+}
+
+a {
+    width: 70px;
+    /*tamaño del boton*/
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    /*tipo de letra*/
+    font-weight: 700;
+    /*tamaño de la letra*/
+    border-radius: 30px;
+    /*forma de los bordes*/
+    padding: 8px 24px;
+    /*ancho y largo*/
+    background-color: #3d54d4;
+    /*color de los bordes*/
+    color: rgb(5, 197, 255);
+    /*color de la letra*/
+    text-decoration: none;
+    /*esto le quita la cosa de abajo del link*/
+}
+
+
+/*esta le da una trancision toda guapa a los titulos */
+h1,
+h2 {
+    animation-name: cambioColor;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cambioColor {
+    0% {
+        color: rgb(0, 81, 255);
+    }
+
+    50% {
+        color: blue;
+    }
+
+    100% {
+        color: rgb(0, 119, 255);
+    }
+}
+
+
+/*Aprendiendo transiciones 
+
+transition <property> <duration> <timing-function> <delay>
+transicion <propiedad> <duracion> <velocidad del cambio> <tiempo de espera>
+*/
+
+
+/* .pro {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    transition: background-color 2s;
+}
+
+.pro:hover {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    rotate: 180deg;
+
+}  */
+
+
+img:hover {
+    /* height: 200px;
+    width: 200px; */
+    /* border: 4px solid rgb(5, 130, 207); */
+    border-radius: 9px;
+    /* transition: width 3s; */
+    /* cursor: pointer; */
+
+}
+
+a:hover {
+    background-color: transparent;
+    border: 2px solid rgb(12, 65, 179);
+    color: rgb(12, 65, 179);
+}
+
+
+h1:hover {
+    border: 3px solid #1b549e;
+    background-color: #2f6ce47d;
+    transition: background-color 3s;
+}
+
+h2:hover {
+    border: 3px solid #1b549e;
+    background-color: #2f6ce47d;
+    transition: background-color 3s;
+}
